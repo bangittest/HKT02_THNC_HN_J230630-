@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stye.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Danh sách học viên</h1>
+        <div class="seach_add_scope">
+            <!-- <button class="btn btn_them" onclick=""></button> -->
+
+            <div>
+                <p>Tim kiếm học viên:</p>
+                <input type="search" name="" id="search">
+                <button type="button " onclick="checkSearch()" class="btn btn_tim_kiem">Seach</button>
+            </div>
+        </div>
+        <table border="1px" id="studentTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Gender</th>
+                    <th>Hành động</th>
+                    <th><button onclick="sortStudent()">sắp xếp(alpha b)</button></th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <tr>
+                    <!-- <td>1</td>
+                    <td>Nguyen Van A</td>
+                    <td>a@gmail.com</td>
+                    <td>098737443</td>
+                    <td>Ha noi</td>
+                    <td>nam</td>
+                    <td> -->
+                    <div class="action_col">
+                        <button class="btn btn_sua">Edit</button>
+                        <button class="btn btn_xoa">Delete</button>
+                    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="form_scope">
+            <form action="" id="form">
+                <h3>
+                    Thông tin học viên
+                </h3>
+                <div>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" name="" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" name="" id="phone" pattern="[0-9]{10,11}" required>
+                </div>
+                <div>
+                    <label for="city">Quê Quán</label>
+                    <input type="text" name="" id="city" required>
+                </div>
+                <div>
+                    <label for="gender">Gioi tinh:</label>
+                    <input type="radio" id="" name="nam" checked value="nam"><label for="">Nam</label>
+                    <input type="radio" id="" name="nam" value="nu"><label for="">Nu</label>
+                </div>
+                <div>
+                    <button class="btn btn_them" type="submit">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
